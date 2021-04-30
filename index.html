@@ -7,9 +7,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="hidden">
-    <div class="pop_up">
-
+  <div class="_hidden pop_up">
+    <div class="pop_up-group">
+      <form class="pop_up-form">
+        <header class="pop_up-title">Ваш фидбек</header>
+        <div class="form-group">
+          <label class="select-group">
+            <span class="select-label">Как часто вы заходите на сайт</span>
+            <select class="select">
+              <option class="select-option" value="onceAday" selected>Почти каждый день</option>
+              <option class="select-option" value="onceAweek">Раз в неделю</option>
+              <option class="select-option" value="onceAmonth">Раз в месяц</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-group">
+            <span class="checkbox-label">Вы подписаны на e-mail рассылку?</span>
+            <input type="checkbox" class="checkbox" required>
+            <span class="checkbox-text">Да</span>
+            <input type="checkbox" class="checkbox">
+            <span class="checkbox-text">Нет</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <span class="feedback-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea rows="10" cols="50" class="feedback-field" placeholder="Может, больше рецептов?"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="pop_up-button">Отправить</button>
+        </div>
+      </form>
+      
+        <button class="pop_up-close" type="button">Закрыть окно</button>
+         
     </div>
   </div>
   <header class="page-header">
@@ -52,13 +83,12 @@
         </div>
   </header>
   <div class="page">
-        <div class="trends">
+        <section class="trends">
           <div>
-            <h3 class="trend-title sidebar-title">Сейчас в тренде</h3>
+            <h2 class="trend-title sidebar-title">Сейчас в тренде</h2>
           </div>
           <div class="trend-cards">
-            <article class="trend-card">
-              <img src="images/trend1.jpg">
+            <article class="trend-card trend-card-img1">
               <div class="trend-card__body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
@@ -71,8 +101,7 @@
                 <h3 class="trend-card__name">Сейчас в тренде: сад  на подоконнике</h3>
               </div>
             </article>
-            <article class="trend-card">
-              <img src="images/trend2.jpg">
+            <article class="trend-card trend-card-img2">
               <div class="trend-card__body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
@@ -82,8 +111,7 @@
                 <h3 class="trend-card__name">Cыры на красивых картинках из интернета: какие они на вкус?</h3>
               </div>
             </article>
-            <article class="trend-card">
-              <img src="images/trend3.jpg">
+            <article class="trend-card trend-card-img3">
               <div class="trend-card__body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
@@ -96,8 +124,7 @@
                 <h3 class="trend-card__name">Собираемся в первый поход в горы</h3>
               </div>
             </article>
-            <article class="trend-card">
-              <img src="images/trend4.jpg">
+            <article class="trend-card trend-card-img4">
               <div class="trend-card__body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
@@ -111,8 +138,8 @@
               </div>
             </article>
           </div>
-        </div>
-        <div class="page-section">
+        </section>
+        <section class="page-section">
         <main class="news">
           <article class="news-card">
             <div class="news-card-preview">
@@ -254,7 +281,7 @@
         <aside class="sidebar-section">
           <section class="new-posts-section">
             <h3 class="new-posts-title sidebar-title">Новые посты</h3>
-            <div class="new-posts">
+            <div class="new-posts new-posts-block">
               <article class="new-post">
                 <div class="new-post-preview">
                   <img class="new-post-img" src="images/2.jpg" alt>
@@ -396,106 +423,106 @@
             </ul>
           </section>
         </aside>
-        </div>
+        </section>
+        <section class="shop">
+          <div class="shop_header">
+            <h2 class="shop-title sidebar-title">Наши изделия</h2>
+          </div>
+          <div class="product-list">
+            <article class="product">
+            <div class="product__imgbox">
+              <picture>
+                <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg" class="shop-image">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg" class="shop-image">
+                <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg" class="shop-image">
+                <img src="images/shop-item-desk1.jpg" class="shop-image" alt="Подушка">
+                </picture>
+            </div>
+            <div class="product__body">
+              <div class="product__content">
+                <h3 class="product__title">Подушки на диван</h3>
+                <div class="product__description">
+                  <p>Набор из двух подушек с модными принтами. Видео о создании <a class="shop-product__content-link" href="#0">здесь</a>.</p>
+                </div>
+              </div>
+              <footer class="product__footer">
+                <div class="product__prices">
+                  <span class="product__price product__price_old">
+                    <span class="product__price-value">1000</span>
+                    <span class="product__rub">₽</span>
+                  </span>
+                  <span class="product__price">
+                    <span class="product__price-value">800</span>
+                    <span class="product__rub">₽</span>
+                  </span>
+                </div>
+                <button class="product__button" type="button">В магазин</button>
+              </footer>
+            </div>
+            </article>
+            <article class="product">
+            <div class="product__imgbox">
+              <picture>
+                <source media="(max-width: 640px)" srcset="images/shop-item-mobilet2.jpg" class="shop-image">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg" class="shop-image">
+                <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg" class="shop-image">
+                <img src="images/shop-item-desk2.jpg" class="shop-image" alt="Подушка">
+            </picture>
+            </div>
+            <div class="product__body">
+              <div class="product__content">
+                <h3 class="product__title">Кукла «Зайчик»</h3>
+                <div class="product__description">
+                  <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-product__content-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+                </div>
+              </div>
+              <footer class="product__footer">
+                <div class="product__prices">
+                  <span class="product__price">
+                    <span class="product__price-value">3500</span>
+                    <span class="product__rub">₽</span>
+                  </span>
+                </div>
+                <button class="product__button" type="button">В магазин</button>
+              </footer>
+            </div>
+            </article>
+            <article class="product">
+            <div class="product__imgbox">
+              <picture>
+                <source media="(max-width: 640px)" srcset="images/shop-item-mobilet3.jpg" class="shop-image">
+                <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg" class="shop-image">
+                <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg" class="shop-image">
+                <img src="images/shop-item-desk3.jpg" class="shop-image" alt="Подушка">
+                </picture>
+            </div>
+            <div class="product__body">
+              <div class="product__content">
+                <h3 class="product__title">Шестиугольная рамка</h3>
+                <div class="product__description">
+                  <p>Необычная рамка для украшения дома из видео <a class="shop-product__content-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
+                </div>
+              </div>
+              <footer class="product__footer">
+                <div class="product__prices">
+                  <span class="product__price product__price_old">
+                    <span class="product__price-value">500</span>
+                    <span class="product__rub">₽</span>
+                  </span>
+                  <span class="product__price">
+                    <span class="product__price-value">400</span>
+                    <span class="product__rub">₽</span>
+                  </span>
+                </div>
+                <button class="product__button" type="button">В магазин</button>
+              </footer>
+            </div>
+            </article>
+          </div>
+        </section>  
   </div>
-  <div class="shop">
-        <div class="shop_header">
-          <h3 class="shop-title sidebar-title">Наши изделия</h3>
-        </div>
-        <div class="product-list">
-          <article class="product">
-          <div class="product__imgbox">
-            <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg" class="shop-image">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg" class="shop-image">
-              <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg" class="shop-image">
-              <img src="images/shop-item-desk1.jpg" class="shop-image" alt="Подушка">
-              </picture>
-          </div>
-          <div class="product__body">
-            <div class="product__content">
-              <h3 class="product__title">Подушки на диван</h3>
-              <div class="product__description">
-                <p>Набор из двух подушек с модными принтами. Видео о создании <a class="shop-product__content-link" href="#0">здесь</a>.</p>
-              </div>
-            </div>
-            <footer class="product__footer">
-              <div class="product__prices">
-                <span class="product__price product__price_old">
-                  <span class="product__price-value">1000</span>
-                  <span class="product__rub">₽</span>
-                </span>
-                <span class="product__price">
-                  <span class="product__price-value">800</span>
-                  <span class="product__rub">₽</span>
-                </span>
-              </div>
-              <button class="product__button" type="button">В магазин</button>
-            </footer>
-          </div>
-          </article>
-          <article class="product">
-          <div class="product__imgbox">
-            <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobilet2.jpg" class="shop-image">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg" class="shop-image">
-              <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg" class="shop-image">
-              <img src="images/shop-item-desk2.jpg" class="shop-image" alt="Подушка">
-          </picture>
-          </div>
-          <div class="product__body">
-            <div class="product__content">
-              <h3 class="product__title">Кукла «Зайчик»</h3>
-              <div class="product__description">
-                <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-product__content-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-              </div>
-            </div>
-            <footer class="product__footer">
-              <div class="product__prices">
-                <span class="product__price">
-                  <span class="product__price-value">3500</span>
-                  <span class="product__rub">₽</span>
-                </span>
-              </div>
-              <button class="product__button" type="button">В магазин</button>
-            </footer>
-          </div>
-          </article>
-          <article class="product">
-          <div class="product__imgbox">
-            <picture>
-              <source media="(max-width: 640px)" srcset="images/shop-item-mobilet3.jpg" class="shop-image">
-              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg" class="shop-image">
-              <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg" class="shop-image">
-              <img src="images/shop-item-desk3.jpg" class="shop-image" alt="Подушка">
-              </picture>
-          </div>
-          <div class="product__body">
-            <div class="product__content">
-              <h3 class="product__title">Шестиугольная рамка</h3>
-              <div class="product__description">
-                <p>Необычная рамка для украшения дома из видео <a class="shop-product__content-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
-              </div>
-            </div>
-            <footer class="product__footer">
-              <div class="product__prices">
-                <span class="product__price product__price_old">
-                  <span class="product__price-value">500</span>
-                  <span class="product__rub">₽</span>
-                </span>
-                <span class="product__price">
-                  <span class="product__price-value">400</span>
-                  <span class="product__rub">₽</span>
-                </span>
-              </div>
-              <button class="product__button" type="button">В магазин</button>
-            </footer>
-          </div>
-          </article>
-        </div>
-  </div>  
   <footer class="page-footer">
-          <div class="widget">
+          <address class="widget">
             <ul class="widget-socials">
               <li class="widget-social">
                 <a href="#0" class="widget-link widget-link-twitter">
@@ -523,7 +550,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </address>
           <div class="copyrights">
             <a href="#0" class="copyrights-text">Copyright © 2009–2019 City Blog LLC.</a>
           </div>
