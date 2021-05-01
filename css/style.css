@@ -6,18 +6,18 @@
 
 @font-face {
   font-family: OpenSans-Regular;
-  src: url(../fonts/OpenSans-Regular.ttf) format(ttf),
-       url(../fonts/OpenSans-Regular.woff) format(woff),
-       url(../fonts/OpenSans-Regular.woff2) format(woff2);
+  src: url("../fonts/OpenSans-Regular.ttf") format(ttf),
+       url("../fonts/OpenSans-Regular.woff") format(woff),
+       url("../fonts/OpenSans-Regular.woff2") format(woff2);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(../fonts/OpenSans-Bold.ttf) format(ttf),
-       url(../fonts/OpenSans-Bold.woff) format(woff),
-       url(../fonts/OpenSans-Bold.woff2) format(woff2);
+  src: url("../fonts/OpenSans-Bold.ttf") format(ttf),
+       url("../fonts/OpenSans-Bold.woff") format(woff),
+       url("../fonts/OpenSans-Bold.woff2") format(woff2);
   font-weight: 700;
   font-style: bold;
 }
@@ -389,22 +389,22 @@
 }
 
 .trend-card-img1{
-  background-image: url(../images/trend1.jpg);
+  background-image: url("../images/trend1.jpg");
   background-size: cover;
 }
 
 .trend-card-img2{
-  background-image: url(../images/trend2.jpg);
+  background-image: url("../images/trend2.jpg");
   background-size: cover;
 }
 
 .trend-card-img3{
-  	background-image: url(../images/trend3.jpg);
+  	background-image: url("../images/trend3.jpg");
     background-size: cover;  
 }
 
 .trend-card-img4{
-  background-image: url(../images/trend4.jpg);
+  background-image: url("../images/trend4.jpg");
   background-size: cover;
 }
 
@@ -619,7 +619,7 @@ section.search-form form > .field {
   width: 45px;
   height: 45px;
   border: 1px solid #b59f5b;
-  background-image: url(../svg/search.svg);
+  background-image: url("../svg/search.svg");
   background-size: 13px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -833,23 +833,23 @@ section.search-form form > .field {
 }
 
 .widget-link-twitter::after {
-  background-image: url(../svg/004-twitter.svg);
+  background-image: url("../svg/004-twitter.svg");
 }
 
 .widget-link-pin::after {
-  background-image: url(../svg/001-pinterest.svg);
+  background-image: url("../svg/001-pinterest.svg");
 }
 
 .widget-link-facebook::after {
-  background-image: url(../svg/002-facebook-logo.svg);
+  background-image: url("../svg/002-facebook-logo.svg");
 }
 
 .widget-link-instagram::after {
-  background-image: url(../svg/005-instagram.svg);
+  background-image: url("../svg/005-instagram.svg");
 }
 
 .widget-link-tumblr::after {
-  background-image: url(../svg/003-tumblr.svg);
+  background-image: url("../svg/003-tumblr.svg");
 }
 
 .social-link-text {
@@ -904,7 +904,7 @@ section.search-form form > .field {
   }
 
   .page-header {
-    background-image: url(../images/banner-mobile.jpg);
+    background-image: url("../images/banner-mobile.jpg");
   }
 
   .menu-list {
@@ -1021,7 +1021,7 @@ section.search-form form > .field {
   }
 
   .page-header {
-    background-image: url(../images/banner-bg-tablet.jpg);
+    background-image: url("../images/banner-bg-tablet.jpg");
   }
 
   .header-logo {
@@ -1188,7 +1188,7 @@ section.search-form form > .field {
   }
 
   .page-header {
-    background-image: url(../images/banner-bg.jpg);
+    background-image: url("../images/banner-bg.jpg");
   }
 
   .header-section {
