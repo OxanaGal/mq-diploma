@@ -6,18 +6,18 @@
 
 @font-face {
   font-family: OpenSans-Regular;
-  src: url("../fonts/OpenSans-Regular.ttf") format(ttf),
-       url("../fonts/OpenSans-Regular.woff") format(woff),
-       url("../fonts/OpenSans-Regular.woff2") format(woff2);
+  src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+       url("../fonts/OpenSans-Regular.woff") format("woff"),
+       url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url("../fonts/OpenSans-Bold.ttf") format(ttf),
-       url("../fonts/OpenSans-Bold.woff") format(woff),
-       url("../fonts/OpenSans-Bold.woff2") format(woff2);
+  src: url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+       url("../fonts/OpenSans-Bold.woff") format("woff"),
+       url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: bold;
 }
@@ -270,7 +270,7 @@
 
 .header-logo {
   width: 100%;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .button-menu {
@@ -313,14 +313,20 @@
   background-color: #ffffff;
   position: absolute;
   left: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
   display: block;
+}
+
+.menu__button:before{
+  margin-top: -9px;
+}
+
+.menu__button:after{
+  margin-top: 5px;
 }
 
 .menu {
   display: block;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .intro {
@@ -608,7 +614,7 @@ section.search-form form > .field {
 .subscription-form,
 .categories,
 .tags {
-  padding-top: 45px;
+  margin-top: 45px;
 }
 
 .search-button {
@@ -716,6 +722,10 @@ section.search-form form > .field {
 .shop {
   margin-top: 45px;
   width: 100%;
+}
+
+.product-list{
+  margin: auto;
 }
 
 .product {
@@ -900,7 +910,7 @@ section.search-form form > .field {
   }
 
   .header-logo {
-    padding-top: 13em;
+    margin-top: 13em;
   }
 
   .page-header {
@@ -913,7 +923,9 @@ section.search-form form > .field {
 
   .intro {
     width: 100%;
-    padding-bottom: 13em;
+    margin-top: 40px;
+    margin-bottom: 13em;
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -998,6 +1010,25 @@ section.search-form form > .field {
   }
 }
 
+@media (max-width: 640px) and (orientation: landscape){
+  .trend-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .trend-card {
+    width: calc(50% - 2px);
+  }
+  .trend-card:nth-child(even) {
+    margin-left: 4px;
+  }
+
+  .trend-card__name {
+    font-size: 17px;
+    line-height: 1.294;
+  }
+}
+
 @media (min-width: 641px) and (max-width: 1200px) {
   .header-section {
     box-sizing: border-box;
@@ -1026,15 +1057,15 @@ section.search-form form > .field {
 
   .header-logo {
     width: 160px;
-    padding-top: 40px;
-    padding-left: 35px;
+    margin-top: 40px;
+    margin-left: 35px;
   }
 
   .intro {
     width: 600px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 90px;
+    margin-top: 90px;
     }
 
   .intro-title {
@@ -1160,7 +1191,6 @@ section.search-form form > .field {
     max-width: 700px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
   }
 
   .product {
@@ -1226,6 +1256,7 @@ section.search-form form > .field {
     text-transform: uppercase;
     color: #ffffff;
   }
+
   .trend-title {
     font-size: 20px;
     font-weight: bold;
@@ -1344,7 +1375,7 @@ section.search-form form > .field {
     flex-direction: column;
   }
 
-  .product:nth-child(n + 1) {
+  .product:nth-child(n + 2) {
     margin-left: 70px;
   }
 
