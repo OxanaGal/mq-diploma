@@ -804,6 +804,10 @@ section.search-form form > .field {
   color: #ffffff;
 }
 
+.product__button:hover {
+  background-color: #313131;
+}
+
 .page-footer {
   width: 1200px;
   text-align: center;
