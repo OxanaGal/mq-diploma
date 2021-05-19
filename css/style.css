@@ -252,9 +252,12 @@
 }
 
 .header-section {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -270,7 +273,6 @@
 
 .header-logo {
   width: 100%;
-  margin-top: 25px;
 }
 
 .button-menu {
@@ -326,7 +328,6 @@
 
 .menu {
   display: block;
-  margin-top: 25px;
 }
 
 .intro {
@@ -334,7 +335,6 @@
   width: 720px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -359,7 +359,7 @@
 }
 
 .trend-card {
-  height: 235px;
+  min-height: 235px;
   position: relative;
   overflow: hidden;
   background-color: black;
@@ -379,14 +379,13 @@
   z-index: 2;
 }
 
-.trend-card__body {
+.trend-card-body {
   width: calc(100% - 30px);
   box-sizing: border-box;
   padding: 15px;
   border: 3px solid #b59f5b;
   text-align: left;
   text-transform: uppercase;
-  color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -414,13 +413,23 @@
   background-size: cover;
 }
 
-.trend-card__name {
+.trend-card-name {
   font-family: OpenSans-Regular;
   font-size: 16px;
   line-height: 1.25;
 }
 
-.trend-card__name:hover {
+.trend-card-name:hover {
+  color: #b59f5b;
+}
+
+.trend-link{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.trend-link:hover {
   color: #b59f5b;
 }
 
@@ -451,7 +460,6 @@
   font-family: OpenSans-Bold, Arial;
   font-weight: bold;
   padding-left: 0;
-  margin-top: 0;
 }
 
 .tags-link-item-news-card:nth-child(n + 2) {
@@ -466,8 +474,8 @@
 }
 
 .card-info {
-  padding-top: 10px;
-  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .card-date {
@@ -487,13 +495,13 @@
   text-transform: uppercase;
   font-family: OpenSans-Bold, Arial;
   font-size: 16px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .card-link {
   text-decoration: none;
   color: #0f0d0e;
-  line-height: 1, 25;
+  line-height: 1.25;
 }
 
 .card-link:hover {
@@ -503,14 +511,14 @@
 .card-content {
   font-family: OpenSans-Regular, Arial;
   font-size: 14px;
-  line-height: 1, 428;
+  line-height: 1.428;
 }
 
 .sidebar-section {
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: calc(100% -30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(100% - 30px);
 }
 
 .sidebar-title {
@@ -557,8 +565,7 @@
 .new-post-info {
   box-sizing: border-box;
   width: 215px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-left: 15px;
 }
 
 .new-post-date {
@@ -572,7 +579,7 @@
   font-family: OpenSans-Bold, Arial;
   font-size: 14px;
   text-transform: uppercase;
-  line-height: 1, 285;
+  line-height: 1.285;
   margin-top: 0;
 }
 
@@ -585,17 +592,10 @@
   color: #b59f5b;
 }
 
-.search-form {
-  width: 270px;
-  box-sizing: border-box;
-}
-
 .field {
-  width: 270px;
-  box-sizing: border-box;
+  width: 225px;
   height: 45px;
   padding: 10px;
-  margin-top: 15px;
   border: 1px solid #f3f7f5;
   font-style: normal;
   font-size: 13px;
@@ -606,9 +606,7 @@
   outline: 1px solid #b59f5b;
 }
 
-section.search-form form > .field {
-  width: 225px;
-}
+
 
 .search-form,
 .subscription-form,
@@ -619,7 +617,6 @@ section.search-form form > .field {
 
 .search-button {
   margin-left: 0;
-  margin-top: 15px;
   display: inline-block;
   vertical-align: middle;
   width: 45px;
@@ -644,6 +641,11 @@ section.search-form form > .field {
   position: absolute;
 }
 
+.subscription-field{
+  margin-top: 15px;
+  width: 270px;
+}
+
 .subscription-button {
   display: block;
   height: 45px;
@@ -661,10 +663,6 @@ section.search-form form > .field {
 
 .subscription-button:hover {
   background-color: #313131;
-}
-
-.tags-list{
-  margin-top: 15px;
 }
 
 .tags-link {
@@ -725,7 +723,8 @@ section.search-form form > .field {
 }
 
 .product-list{
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product {
@@ -758,13 +757,13 @@ section.search-form form > .field {
   font-family: OpenSans-Bold, Arial;
   font-size: 17px;
   text-transform: uppercase;
-  line-height: 1, 294;
+  line-height: 1.294;
 }
 
 .product__description {
   font-family: OpenSans-Regular, Arial;
   font-size: 15px;
-  line-height: 1, 466;
+  line-height: 1.466;
 }
 
 .shop-product__content-link {
@@ -775,14 +774,14 @@ section.search-form form > .field {
 .product__price {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1, 2;
+  line-height: 1.2;
   display: flex;
 }
 
 .product__footer {
   justify-content: space-between;
   align-items: end;
-  padding-top: 20px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -809,12 +808,13 @@ section.search-form form > .field {
 }
 
 .page-footer {
-  width: 1200px;
+  width: 100%;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 .widget {
@@ -874,7 +874,8 @@ section.search-form form > .field {
 }
 
 .copyrights {
-  margin: 70px 14px 40px 14px;
+  margin-right: 14px;
+  margin-left: 14px;
 }
 
 .copyrights-text {
@@ -908,13 +909,12 @@ section.search-form form > .field {
 
   .header-section {
     width: calc(100% - 30px);
-    box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .header-logo {
     margin-top: 13em;
+    margin-left: auto; 
+    margin-right: auto;
   }
 
   .page-header {
@@ -928,8 +928,6 @@ section.search-form form > .field {
   .intro {
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 13em;
-    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -980,18 +978,11 @@ section.search-form form > .field {
   }
 
   .sidebar-title {
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, Arial;
     font-size: 16px;
-    text-align: center;
   }
 
   .tags-link {
     padding: 5px 12px;
-  }
-
-  .search-form {
-    width: 100%;
   }
 
   section.search-form form > .field {
@@ -1005,12 +996,9 @@ section.search-form form > .field {
   .subscription-button {
     width: 100%;
   }
-  .page-footer {
-    width: 100%;
-  }
 
   .copyrights {
-    margin: 50px 14px 40px 14px;
+    margin-top: 50px;
   }
 }
 
@@ -1027,20 +1015,20 @@ section.search-form form > .field {
     margin-left: 4px;
   }
 
-  .trend-card__name {
+  .trend-card-name {
     font-size: 17px;
     line-height: 1.294;
+  }
+
+  .product__imgbox {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
   .header-section {
-    box-sizing: border-box;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .button-menu {
@@ -1098,7 +1086,7 @@ section.search-form form > .field {
     margin-left: 4px;
   }
 
-  .trend-card__name {
+  .trend-card-name {
     font-size: 17px;
     line-height: 1.294;
   }
@@ -1124,25 +1112,22 @@ section.search-form form > .field {
 
   .news-card-info {
     width: 100%;
-    padding-top: 15px;
+    margin-top: 15px;
   }
 
   .card-name {
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, Arial;
     font-size: 17px;
-    padding-top: 15px;
+    margin-top: 15px;
   }
 
   .card-info {
-    padding-top: 35px;
-    padding-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
 
   .card-content {
-    font-family: OpenSans-Regular, Arial;
     font-size: 15px;
-    line-height: 1, 466;
+    line-height: 1.466;
   }
 
   .card-content::after {
@@ -1160,7 +1145,7 @@ section.search-form form > .field {
 
   .sidebar-section {
     display: block;
-    padding-left: 35px;
+    margin-left: 35px;
     width: 300px;
   }
 
@@ -1171,15 +1156,12 @@ section.search-form form > .field {
   .new-post-info {
     box-sizing: border-box;
     width: 185px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 15px;
   }
 
   .new-post-title {
-    font-family: OpenSans-Bold, Arial;
     font-size: 14px;
     text-transform: uppercase;
-    line-height: 1, 285;
     margin-top: 0;
   }
 
@@ -1207,12 +1189,13 @@ section.search-form form > .field {
     margin-left: 20px;
   }
 
-  .page-footer {
-    width: 100%;
+  .product__imgbox {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .copyrights {
-    margin: 45px 14px 40px 14px;
+    margin-top: 45px;
   }
 }
 
@@ -1227,16 +1210,18 @@ section.search-form form > .field {
 
   .header-section {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     display: block;
   }
 
   .header {
     justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
+
+  .header-logo {
+    width: 180px;
+}
 
   .menu__button {
     display: none;
@@ -1272,34 +1257,30 @@ section.search-form form > .field {
 
   .trend-card {
     width: calc(25% - 2px);
-    height: 320px;
+    min-height: 320px;
   }
 
   .trend-card:nth-child(n + 2) {
     margin-left: 2px;
   }
 
-  .trend-card__name {
+  .trend-card-name {
     font-size: 20px;
     line-height: 1.2;
   }
 
   .card-info {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 
   .card-name {
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, Arial;
     font-size: 20px;
-    padding-top: 10px;
   }
 
   .card-content {
-    font-family: OpenSans-Regular, Arial;
     font-size: 15px;
-    line-height: 1, 466;
+    line-height: 1.466;
   }
 
   .page-section {
@@ -1315,32 +1296,20 @@ section.search-form form > .field {
     width: 780px;
   }
   
-  .news-card {
-    display: flex;
-    margin-top: 50px;
-  }
-  
   .news-card-preview {
     box-sizing: border-box;
     width: 380px;
   }
   
   .news-card-info {
-    box-sizing: border-box;
-    width: 400px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 30px;
   }
 
   .sidebar-section {
     display: block;
-    padding-left: 100px;
-    padding-right: 0;
-    min-width: 285px;
-  }
-
-  .sidebar-section {
-    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 0;
+    width: 285px;
   }
   
   .news-post-section {
@@ -1356,13 +1325,6 @@ section.search-form form > .field {
     box-sizing: border-box;
     width: 70px;
   }
-  
-  .new-post-info {
-    box-sizing: border-box;
-    width: 215px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 
   .shop-title {
     font-size: 20px;
@@ -1374,7 +1336,7 @@ section.search-form form > .field {
   }
 
   .product {
-    width: calc(30%);
+    width: 30%;
     display: flex;
     flex-direction: column;
   }
@@ -1387,11 +1349,7 @@ section.search-form form > .field {
     margin-top: 10px;
   }
 
-  .page-footer {
-    width: 100%;
-  }
-
   .copyrights {
-    margin: 50px 14px 40px 14px;
+    margin-top: 50px;
   }
 }

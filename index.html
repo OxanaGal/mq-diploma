@@ -89,7 +89,7 @@
           </div>
           <div class="trend-cards">
             <article class="trend-card trend-card-img1">
-              <div class="trend-card__body">
+              <div class="trend-card-body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
                     <a class="tags-link-card" href="0">Lifestyle</a>
@@ -98,21 +98,21 @@
                     <a class="tags-link-card" href="0">Interior</a>
                   </li>
                 </ul>
-                <h3 class="trend-card__name">Сейчас в тренде: сад  на подоконнике</h3>
+                <h3 class="trend-card-name"><a href="0" class="trend-link">Сейчас в тренде: сад  на подоконнике</a></h3>
               </div>
             </article>
             <article class="trend-card trend-card-img2">
-              <div class="trend-card__body">
+              <div class="trend-card-body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
                     <a class="tags-link-card" href="0">Food</a>
                   </li>
                 </ul>
-                <h3 class="trend-card__name">Cыры на красивых картинках из интернета: какие они на вкус?</h3>
+                <h3 class="trend-card-name"><a href="0" class="trend-link">Cыры на красивых картинках из интернета: какие они на вкус?</a></h3>
               </div>
             </article>
             <article class="trend-card trend-card-img3">
-              <div class="trend-card__body">
+              <div class="trend-card-body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
                     <a class="tags-link-card" href="0">Lifestyle</a>
@@ -121,11 +121,11 @@
                     <a class="tags-link-card" href="0">Travel</a>
                   </li>
                 </ul>
-                <h3 class="trend-card__name">Собираемся в первый поход в горы</h3>
+                <h3 class="trend-card-name"><a href="0" class="trend-link">Собираемся в первый поход в горы</a></h3>
               </div>
             </article>
             <article class="trend-card trend-card-img4">
-              <div class="trend-card__body">
+              <div class="trend-card-body">
                 <ul class="tags-list">
                   <li class="tags-link-item-news-card">
                     <a class="tags-link-card" href="0">Food</a>
@@ -134,7 +134,7 @@
                     <a class="tags-link-card" href="0">Health</a>
                   </li>
                 </ul>
-                <h3 class="trend-card__name">Сейчас в тренде: сколько витамина c в лимонах?</h3>
+                <h3 class="trend-card-name"><a href="0" class="trend-link">Сейчас в тренде: сколько витамина c в лимонах?</a></h3>
               </div>
             </article>
           </div>
@@ -351,7 +351,10 @@
           </section>
           <section class="search-form">
             <form action="search">
-              <input class="field" name="query" placeholder="Найти..." required>
+              <label>
+                <span class="_hidden" style="display: block">Найти</span>
+                <input class="field" name="query" placeholder="Найти..." required>
+              </label>
               <button class="search-button">
                 <span class="search-button-text">Поиск</span>
               </button>
@@ -360,7 +363,10 @@
           <section class="subscription-form">
             <form action="subscription">
               <h3 class="subscription-title sidebar-title">Рассылка</h3>
-              <input type="email" class="field" placeholder="Ваш email-адрес" required>
+              <label>
+                <span class="_hidden">Введите ваш email-адрес</span>
+                <input type="email" class="field subscription-field" placeholder="Ваш email-адрес" required>
+              </label>
               <button class="subscription-button" type="submit">Подписаться</button>
             </form>
           </section>
