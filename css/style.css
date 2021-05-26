@@ -40,6 +40,9 @@
   background-color: rgba(0, 0, 0, 0.75);
   overflow-y: auto;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 5;
 }
 
@@ -89,7 +92,7 @@
 .select{
   display: inline-block;
 
-  width: 330px;
+  width: 100%;
   height: 50px;
 
   padding-left: 20px;
@@ -115,6 +118,10 @@
 .checkbox-label{
   display: block;
   padding-bottom: 10px;
+}
+
+.checkbox-group{
+  cursor: default;
 }
 
 .checkbox-text {
@@ -155,7 +162,7 @@
 
 .feedback-field{
   
-  width: 330px;
+  width: 100%;
   height: 130px;
   resize: none;
 
@@ -179,7 +186,7 @@
   margin: auto;
   display: block;
   height: 45px;
-  width: 330px;
+  width: 100%;
   text-align: center;
   font-family: OpenSans-Bold, Arial;
   font-size: 14px;
@@ -268,7 +275,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .header-logo {
@@ -475,6 +482,10 @@
   text-transform: uppercase;
   color: #b59f5b;
   font-size: 14px;
+}
+
+.tags-link-card:hover {
+  border-bottom: 2px solid #b59f5b;
 }
 
 .card-info {
@@ -797,7 +808,7 @@
   padding: 18px 25px;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: inherit;
+  font-family: OpenSans-Bold;
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -892,27 +903,19 @@
   }
 
   .select{    
-    width: 280px;
     height: 45px;
   }
-
-  .feedback-field{
-    width: 280px;
-   
-  }
-
-  .pop_up-button{
-    width: 280px;
-  }  
 
   .header-section {
     width: calc(100% - 30px);
   }
 
+  .header{
+    margin: auto;
+  }
+
   .header-logo {
     margin-top: 13em;
-    margin-left: auto; 
-    margin-right: auto;
   }
 
   .page-header {
@@ -969,7 +972,7 @@
     display: flex;
     background-color: #eeeeee;
     height: 4px;
-    width: calc(100% -30px);
+    width: calc(100% - 30px);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1005,6 +1008,7 @@
 }
 
 @media (max-width: 640px) and (orientation: landscape){
+  
   .trend-cards {
     display: flex;
     flex-wrap: wrap;
